@@ -12,3 +12,5 @@ wsServer.on('request', function (request) {
         connection.sendUTF(new Date().getTime())
     }, 100);
 });
+
+console.log("Server running");
