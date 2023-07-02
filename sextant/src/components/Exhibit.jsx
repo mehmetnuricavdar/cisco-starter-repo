@@ -1,12 +1,13 @@
 import React from "react";
+import "./Exhibit.css";
 
-const Exhibit = () => {
+const Exhibit = (props) => {
   return (
-    <div className="exhibit">
+    <div className="Exhibit">
       <header>
-        <h3>Header</h3>
+        <h2 className="ExhibitHeading">{props.name}</h2>
       </header>
-      <p>Content</p>
+      <div className="ExhibitContent">{props.children}</div>
     </div>
   );
 };

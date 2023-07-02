@@ -1,10 +1,11 @@
 import React from "react";
+import "./Banner.css";
 
-const Banner = () => {
+const Banner = (props) => {
   return (
-    <header>
-      <h1>SEXTANT</h1>
-    </header>
+    <div className="Banner">
+      <h1>{props.bannerText}</h1>
+    </div>
   );
 };
 
